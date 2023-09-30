@@ -1,0 +1,25 @@
+{
+  "name": "arquitecturabase",
+  "version": "1.0.0",
+  "description": "arquitectura base ",
+  "main": "index.js",
+  "scripts": {
+    "testW": "jasmine-node servidor",
+    "test": "jasmine-node servidor"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctcrespo/arquitecturabase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctcrespo/arquitecturabase/issues"
+  },
+  "homepage": "https://github.com/ctcrespo/arquitecturabase#readme"
+  ,"dependencies": {
+    "express": "^4.18.2",
+    "jasmine-node": "^3.0.0"
+  }
+}

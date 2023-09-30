@@ -17,14 +17,15 @@ function Sistema() {
         return Object.keys(this.usuarios);
     }
     this.usuarioActivo=function (nick){
-        if(!this.usuarios[nick]){
-            console.log("Este usuario no existe:" +nick);
-            return false;
-        }
-        else{
-            console.log("este usuario ya existe");
-            return true;
-        }
+        // if(!this.usuarios[nick]){
+        //     console.log("Este usuario no existe:" +nick);
+        //     return false;
+        // }
+        // else{
+        //     console.log("este usuario ya existe");
+        //     return true;
+        // }
+        return(nick in this.usuarios);
     }
     this.eliminarUsuario=function (nick){
         if(this.usuarios[nick]){
@@ -35,7 +36,7 @@ function Sistema() {
             console.log("el usuario no existe")
         }
     }
-    this.numeroUsuarios=function(){
+      this.numeroUsuarios=function(){
         let lista=Object.keys(this.usuarios);
         return lista.length;
     }
