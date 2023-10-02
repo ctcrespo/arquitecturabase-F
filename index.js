@@ -8,11 +8,16 @@ app.use(express.static(__dirname + "/"));
 
 let sistema=new modelo.Sistema(); 
 
-app.get("/", function(request,response){ 
+/*app.get("/", function(request,response){ 
     var contenido=fs.readFileSync(__dirname+"/Cliente/index.html");
     response.setHeader('Content-Type', 'text/html'); 
     response.send(contenido); 
-}); 
+}); */
+app.get("/agregarUsuario/:nick",function(request,response){ 
+    let nick=request.params.nick; 
+    let res=sistema.agregarUsuario(nick); 
+    response.send(res); 
+});
 
     app.listen(PORT, () => { 
         console.log(`App está escuchando en el puerto ${PORT}`); 

@@ -4,8 +4,9 @@
   "description": "arquitectura base ",
   "main": "index.js",
   "scripts": {
-    "testW": "jasmine-node servidor",
-    "test": "jasmine-node servidor"
+    "start": "node index.js", 
+    "testW": "node_modules\\.bin\\jasmine-node servidor", 
+    "test": "./node_modules/.bin/jasmine-node servidor"
   },
   "devDependencies": {},
   "repository": {
